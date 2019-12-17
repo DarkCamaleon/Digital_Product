@@ -1,0 +1,232 @@
+/* selectores los id se llaman por medio de un #"el nombre" y las class por medio de un ."el nombre" */
+/* variables */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root{
+
+  --green-color:#7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+  /* tipografia */
+  --normal:12px;
+  /* espaciado - padding */
+  --space:10px;
+  /* box shadow */
+  --box:0px 0 2px 1px #e6e5e9;
+}
+
+
+html,body{
+
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+nav {
+   /* display flex sirve para colocar las etiquetas en forma vertical */
+  display: flex;
+  /* background: es un propiedad de CSS que define el color de fondo de un elemento */
+  background-color: var(--green-color);
+  padding: var(--space);
+  /* color: hace referencia al color de la letra */
+  color: var(--white-color);
+
+/* justify-content: space-between = El primer item al inicio, el último al final  */
+  justify-content: space-between;
+  /* align-items : centra los bloque de la linea */
+  align-items: center;
+
+}
+
+nav a{
+  /* text-decoration = sirve para la decoracion del texto subrayados etc. */
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+nav a:hover{
+  /* hover se manifiesta cuando el cursor esta por encima del item en donde se pone el hover */
+  color: var(--white-color);
+}
+
+nav ul{
+
+  display: flex;
+}
+
+nav li{
+
+  padding-left: 20px;
+  /* list-style= none quita los estilo de las listas */
+  list-style: none;
+
+}
+
+label{
+
+  font-size: var(--normal);
+
+
+}
+
+.main_section{
+padding: 15%;
+/* text-align sirve para alinear bloques */
+text-align: center;
+}
+
+.seccion_products{
+  background-image: url("../imagenes/curve.png");
+  /* imagen de fondo */
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+}
+
+.product{
+  padding: 20px;
+  margin-top: -226px;
+}
+
+.img_content{
+  text-align: center;
+}
+
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  /* para que nuestro boton ocupe todo el ancho de nuestra tarjeta */
+  padding: var(--space);
+  /* para hacer unu poco mas grande nuestro boton  */
+  font-size: var(--normal);
+  /* para darle tamaño al texto  */
+  color: var(--white-color);
+  /* para darle color al texto  */
+  border: 0px;
+  /* para quitarle el borde  */
+  cursor: pointer;
+  /* para que salga la manito cuando nos pongamos sobre nuestro boton  */
+  border-radius: 2px;
+  /* para que en las esquinas de mi boton se vean curvas  */
+}
+
+.main_button:hover{
+  /* hover es un valor para generar la interaccion entre nuestros botones que cuando pongamos el puntero tome otro color como efecto */
+  /* background-color: #7ACC2D; */
+  background-color: #63a426;
+}
+
+/* comienzo seccion productos de animales */
+
+.seccion_producto{
+  padding: 10%;
+  display: flex;
+}
+
+.productos_animales{
+  text-align: center;
+  padding: 20px;
+}
+
+.imagen img{
+  max-height: 100px;
+}
+
+.texto_pa{
+  text-align: justify;
+}
+
+/* fin de la seccion productos de animales */
+
+/* comienzo de la seccion de relatores */
+
+.seccion_relator{
+  display: flex;
+  padding: 5%;
+}
+
+.persona img{
+  width: 100%;
+}
+
+h2.titulo_relator{
+  text-align: center;
+}
+
+.relator_persona{
+  padding: var(--space);
+}
+
+.persona{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.relator_persona .texto_relator{
+  padding: var(--space);
+}
+
+/* fin de la seccion relator */
+
+/* venta */
+
+.modulo_pago{
+
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images{
+  text-align: center;
+}
+
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+
+  margin-top: 10px;
+}
+
+/* fin MODULO VENTA */
+
+
+
+footer{
+  /* para que los bloques sean flexibles */
+  display:flex;
+  /* https://developer.mozilla.org/es/docs/Web/CSS/justify-content */
+  /* Distribuir items uniformemente
+El primer item al inicio, el último al final */
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+
+}
+
+.contacto a{
+  color: var(--white-color);
+  
+}

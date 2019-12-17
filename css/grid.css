@@ -1,0 +1,90 @@
+:root{
+
+  --col: 8.3333333333%;
+}
+
+.container{
+  max-width: 900px;
+  margin: auto;
+
+}
+.row{
+  display: flex;
+  align-items: center;
+}
+
+
+.producto_img img{
+  width: 58%;
+}
+
+
+.col-1{
+  width: var(--col);
+}
+
+.col-2{
+  width: calc(var(--col) * 2);
+}
+
+.col-3{
+  width: calc(var(--col) * 3);
+}
+
+.col-4{
+  width: calc(var(--col) * 4);
+}
+
+.col-5{
+  width: calc(var(--col) * 5);
+}
+
+.col-6{
+  width: calc(var(--col) * 6);
+}
+
+.col-7{
+  width: calc(var(--col) * 7);
+}
+
+.col-8{
+  width: calc(var(--col) * 8);
+}
+
+.col-9{
+  width: calc(var(--col) * 9);
+}
+
+.col-10{
+  width: calc(var(--col) * 10);
+}
+
+.col-11{
+  width: calc(var(--col) * 11);
+}
+
+.col-12{
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .row{
+    display: inherit;
+  }
+
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+/* contair  "padre de" > row "padre de" > column */

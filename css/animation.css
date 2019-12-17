@@ -1,0 +1,72 @@
+
+
+
+.fadeIn {
+  animation-duration: 4s;
+  /* Indica la cantidad de tiempo que la animación consume en completar su ciclo (duración). */
+  -webkit-animation-duration: 4s;
+  animation-fill-mode: both;
+  /* Especifica qué valores tendrán las propiedades después de finalizar la animación (los de antes de ejecutarla, los del último fotograma de la animación o ambos). */
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeIn;
+  /* Especifica el nombre de la regla @keyframes que describe los fotogramas de la animación. */
+  -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
+}
+
+.fadeDown{
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeDown;
+  -webkit-animation-name: fadeDown;
+}
+
+@keyframes fadeDown {
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+  }
+
+}
+
+.fadeUp{
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeUp;
+  -webkit-animation-name: fadeUp;
+}
+
+@keyframes fadeUp {
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+  }
+
+}
